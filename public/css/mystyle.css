@@ -3,3 +3,7 @@ body {
     font-family: Loew, sans-serif;
     font-size: 18px;
 }
+
+.jumbotron{
+    background-color: #d9edf7;
+}

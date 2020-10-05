@@ -27,7 +27,7 @@ class MembersController extends Controller
             $student->email = $request['new_email'];
             $student->phone = $request['new_phone'];
             $student->save();
-            return view('members.profile',['id'=>$student->id]);
+            return redirect()->route('members/profile',['id'=>$student->id]);
         }
     }
 
@@ -39,7 +39,8 @@ class MembersController extends Controller
             $user->email = $request['new_email'];
             $user->phone = $request['new_phone'];
             $user->save();
-            return view('members.profile',['id'=>$user->id]);
+            return redirect()->route('profile');
+//            return view('members.profile',['id'=>$user->id]);
         }
     }
 
@@ -53,7 +54,20 @@ class MembersController extends Controller
             $user->email = $request['new_email'];
             $user->phone = $request['new_phone'];
             $user->save();
-            return view('members.profile',['id'=>$user->id]);
+            return redirect()->route('members/profile',['id'=>$user->id]);
+//            return view('members.profile',['id'=>$user->id]);
+        }
+    }
+
+    public function deleteStudent(Request $request, $id){
+        if ($request->has('save')){
+            $user = User::find($id);
+            if ($user != null) {
+                $user->delete();
+                return redirect()->route('members')->with(['message' => 'Successfully deleted!!']);
+            }
+            else
+                return redirect()->route('members');
         }
     }
 }

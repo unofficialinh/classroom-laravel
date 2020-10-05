@@ -19,12 +19,27 @@
         </div><br>
         <div style="text-align: center">
             @if (Auth::user()->id == $member->id)
-                <button class="btn btn-default"><a href="{{ route('profile/editProfile') }}">Edit your profile</a></button>
+                <button class="btn btn-default">
+                    <a href="{{ route('profile/editProfile') }}">
+                        Edit your profile
+                    </a>
+                </button>
             @else
-                <button class="btn btn-default"><a href="">Message</a></button>
+                <button class="btn btn-default">
+                    <a href="{{ route('members/messages', ['id'=>$member->id]) }}">
+                        Message
+                    </a>
+                </button>
                 @if(Auth::user()->role == 'teacher' and $member->role == 'student')
                     <button class="btn btn-default">
-                        <a href="{{ route('members/editStudentProfile',['id'=>$id]) }}">Edit student's profile</a>
+                        <a href="{{ route('members/editStudentProfile',['id'=>$id]) }}">
+                            Edit student's profile
+                        </a>
+                    </button>
+                    <button class="btn btn-default">
+                        <a href="{{ route('members/deleteStudent',['id'=>$id]) }}">
+                            Delete student's profile
+                        </a>
                     </button>
                 @endif
             @endif
