@@ -10,18 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55daa70f-7806-4dc2-9bdd-457f827c081e" name="Default Changelist" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MessagesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/members/deleteStudent.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/messages/deleteMessage.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/messages/editMessage.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/messages/messages.blade.php" afterDir="false" />
+    <list default="true" id="55daa70f-7806-4dc2-9bdd-457f827c081e" name="Default Changelist" comment="delete student, display and new message">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MembersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MembersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/mystyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/members/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/messages/deleteMessage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/deleteMessage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/messages/editMessage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/editMessage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/messages/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/messages.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +217,8 @@
       <workItem from="1601818242686" duration="8101000" />
       <workItem from="1601863580336" duration="10500000" />
       <workItem from="1601902756501" duration="808000" />
-      <workItem from="1601903586996" duration="7994000" />
+      <workItem from="1601903586996" duration="8342000" />
+      <workItem from="1601950590775" duration="4986000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1601903744609</created>
@@ -232,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601903744609</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="delete student, display and new message">
+      <created>1601912327247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601912327247</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,11 +250,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="delete student, display and new message" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete student, display and new message" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601907798636">

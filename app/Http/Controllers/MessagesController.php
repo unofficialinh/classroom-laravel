@@ -32,43 +32,25 @@ class MessagesController extends Controller
         }
     }
 
-//    public function editProfile(Request $request){
-//        if ($request->has('save')){
-//            $user = User::find(Auth::user()->id);
-//            if ($request['new_password']!='')
-//                $user->password = $request['new_password'];
-//            $user->email = $request['new_email'];
-//            $user->phone = $request['new_phone'];
-//            $user->save();
-//            return redirect()->route('profile');
-////            return view('members.profile',['id'=>$user->id]);
-//        }
-//    }
-//
-//    public function editStudentProfile(Request $request, $id){
-//        if ($request->has('save')){
-//            $user = User::find($id);
-//            $user->username = $request['new_username'];
-//            $user->name = $request['new_name'];
-//            if ($request['new_password']!='')
-//                $user->password = $request['new_password'];
-//            $user->email = $request['new_email'];
-//            $user->phone = $request['new_phone'];
-//            $user->save();
-//            return redirect()->route('members/profile',['id'=>$user->id]);
-////            return view('members.profile',['id'=>$user->id]);
-//        }
-//    }
-//
-//    public function deleteStudent(Request $request, $id){
-//        if ($request->has('save')){
-//            $user = User::find($id);
-//            if ($user != null) {
-//                $user->delete();
-//                return redirect()->route('members')->with(['message' => 'Successfully deleted!!']);
-//            }
-//            else
-//                return redirect()->route('members');
-//        }
-//    }
+    public function edit(Request $request, $id){
+        if ($request->has('save')){
+            $message = Message::find($id);
+            $message->message = $request['message'];
+            $message->save();
+            return redirect()->route('members/messages', ['id'=>$message->receive_id]);
+        }
+    }
+
+    public function delete(Request $request, $id){
+        if ($request->has('save')){
+            $message = Message::find($id);
+            $user_id = $message->receive_id;
+            if ($message != null) {
+                $message->delete();
+                return redirect()->route('members/messages', ['id'=>$user_id]);
+            }
+            else
+                return redirect()->route('members/messages', ['id'=>$user_id]);
+        }
+    }
 }

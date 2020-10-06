@@ -46,15 +46,5 @@
             </div>
         </div>
     @endforeach
-{{--    <div class="panel-group">--}}
-{{--        <div class="panel panel-default">--}}
-{{--            <div class="panel-heading">--}}
-{{--                <b>'.$row['send'].'</b>--}}
-{{--                <i>('.$row['sendtime'].')</i>--}}
-{{--            </div>--}}
-{{--            <div class="panel-body">'.$row['message'].'--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
 @endsection
 
