@@ -7,7 +7,7 @@
         <ul class="nav navbar-nav">
             <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="{{ route('index') }}">Home</a></li>
             <li class="{{ (request()->is('members*')) ? 'active' : '' }}"><a href="{{ route('members') }}">Members</a></li>
-            <li class="{{ (request()->is('exercises*')) ? 'active' : '' }}"><a href="">Exercises</a></li>
+            <li class="{{ (request()->is('exercises*')) ? 'active' : '' }}"><a href="{{ route('exercises') }}">Exercises</a></li>
             <li class="{{ (request()->is('challenge*')) ? 'active' : '' }}"><a href="">Challenge</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">

@@ -10,12 +10,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55daa70f-7806-4dc2-9bdd-457f827c081e" name="Default Changelist" comment="delete student, display and new message">
+    <list default="true" id="55daa70f-7806-4dc2-9bdd-457f827c081e" name="Default Changelist" comment="edit and delete message">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ExercisesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Exercise.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/exercises/exercises.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/exercises/info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/exercises/newExercise.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/exercises/submission.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/messages/deleteMessage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/deleteMessage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/messages/editMessage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/editMessage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/messages/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/messages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/members/addNewStudent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members/addNewStudent.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/members/deleteStudent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members/deleteStudent.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/members/editStudentProfile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members/editStudentProfile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +226,8 @@
       <workItem from="1601863580336" duration="10500000" />
       <workItem from="1601902756501" duration="808000" />
       <workItem from="1601903586996" duration="8342000" />
-      <workItem from="1601950590775" duration="4986000" />
+      <workItem from="1601950590775" duration="9649000" />
+      <workItem from="1601990065484" duration="2349000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1601903744609</created>
@@ -234,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601912327247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edit and delete message">
+      <created>1601955639001</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601955639001</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,13 +272,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init commit" />
     <MESSAGE value="delete student, display and new message" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete student, display and new message" />
+    <MESSAGE value="edit and delete message" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit and delete message" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601907798636">
+    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601956915793">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601907798636" />
+    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601956915793" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1601696586892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -271,10 +288,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="407" y="63" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1601909753997" />
-    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1601906117329">
+    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1601958287052">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1601906117329" />
+    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1601958287052" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1601536744973">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

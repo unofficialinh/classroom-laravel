@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+    @if(Auth::user()->role == 'teacher')
     @php($student = App\Models\User::find($id))
     <div class="jumbotron">
         <div style="text-align: center">
@@ -50,5 +51,6 @@
             </div>
         </form>
     </div>
+    @endif
 @endsection
 

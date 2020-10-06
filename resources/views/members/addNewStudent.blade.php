@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+    @if(Auth::user()->role == 'teacher')
     <div class="jumbotron">
         <form class="form-horizontal" action="{{ route('addNewStudent') }}" method="POST">
             @csrf
@@ -50,4 +51,6 @@
                 </div>
             </div>
         </form>
+    </div>
+    @endif
 @endsection

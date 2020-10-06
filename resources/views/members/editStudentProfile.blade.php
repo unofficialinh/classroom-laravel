@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+    @if(Auth::user()->role == 'teacher')
     @php($student = App\Models\User::find($id))
     <div class="jumbotron">
         <form class="form-horizontal" action="{{ route('members/editStudentProfile',['id'=>$id]) }}" method="POST">
@@ -54,4 +55,5 @@
             </div>
         </form>
     </div>
+    @endif
 @endsection
