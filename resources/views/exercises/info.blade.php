@@ -21,6 +21,20 @@
     @if(Auth::user()->role == 'teacher')
         <a href="{{ route('exercises/submissions',['id'=>$id]) }}">Submissions</a><br><br>
     @else
+        <form class="form-horizontal" action="{{ route('exercises/submit',['id'=>$id]) }}" method="POST"
+              enctype="multipart/form-data">
+            @csrf
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="fileToUpload">Submit:</label>
+                <div class="col-sm-8">
+                    <input type="file" class="form-control" name="fileToUpload" id="fileToUpload" required>
+                    <small id="helpBlock" class="form-text text-muted">
 
+                    </small>
+                </div>
+                <div class="col-sm-offset-10">
+                    <button type="submit" name="save" class="btn btn-default">Save</button>
+                </div>
+        </form>
     @endif
 @endsection

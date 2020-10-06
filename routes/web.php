@@ -99,7 +99,7 @@ Route::middleware('auth')->group(function () {
     })->name('exercises/info');
     //Submit solution
     Route::post('/exercises/info/{id}', 'ExercisesController@submit')
-        ->name('/exercises/info');
+        ->name('exercises/submit');
     //Display submissions
     Route::get('exercises/submissions/{id}', '@ExercisesController@submissions')
         ->name('exercises/submissions');

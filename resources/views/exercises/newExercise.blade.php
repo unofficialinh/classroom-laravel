@@ -11,17 +11,17 @@
                   method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="exerciseName">Name:</label>
+                    <label class="control-label col-sm-2" for="name">Name:</label>
                     <div class="col-sm-8">
                         <input type="text" class="form-control"
-                               name="exerciseName" id="exerciseName" required>
+                               name="name" id="name" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="deadline">Deadline:</label>
                     <div class="col-sm-8">
                         <input type="datetime-local" class="form-control"
-                               name="deadline" id="deadline" required>
+                               name="deadline" id="deadline">
                     </div>
                 </div>
                 <div class="form-group">
@@ -32,9 +32,9 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="fileToUpload">Problem:</label>
+                    <label class="control-label col-sm-2" for="file">Problem:</label>
                     <div class="col-sm-8">
-                        <input type="file" class="form-control" name="fileToUpload" id="fileToUpload" required>
+                        <input type="file" class="form-control" name="file" id="file" required>
                     </div>
                 </div>
                 <div class="form-group">
