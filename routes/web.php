@@ -101,8 +101,9 @@ Route::middleware('auth')->group(function () {
     Route::post('/exercises/info/{id}', 'ExercisesController@submit')
         ->name('exercises/submit');
     //Display submissions
-    Route::get('exercises/submissions/{id}', '@ExercisesController@submissions')
+    Route::get('exercises/submissions/{id}', 'ExercisesController@submissions')
         ->name('exercises/submissions');
+
 
     //Log out
     Route::get('/logout', 'LoginController@logout')->name('logout');

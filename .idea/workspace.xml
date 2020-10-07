@@ -10,12 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55daa70f-7806-4dc2-9bdd-457f827c081e" name="Default Changelist" comment="members page completely">
+    <list default="true" id="55daa70f-7806-4dc2-9bdd-457f827c081e" name="Default Changelist" comment="new exercise">
+      <change afterPath="$PROJECT_DIR$/app/Models/Submission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/exercises/submissions.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExercisesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExercisesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/exercises/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exercises/info.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/exercises/newExercise.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exercises/newExercise.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/exercises/submission.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +221,8 @@
       <workItem from="1601902756501" duration="808000" />
       <workItem from="1601903586996" duration="8342000" />
       <workItem from="1601950590775" duration="9649000" />
-      <workItem from="1601990065484" duration="6916000" />
+      <workItem from="1601990065484" duration="6934000" />
+      <workItem from="1602053111606" duration="7349000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1601903744609</created>
@@ -250,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601992517476</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new exercise">
+      <created>1601998864556</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601998864556</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +283,8 @@
     <MESSAGE value="delete student, display and new message" />
     <MESSAGE value="edit and delete message" />
     <MESSAGE value="members page completely" />
-    <option name="LAST_COMMIT_MESSAGE" value="members page completely" />
+    <MESSAGE value="new exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="new exercise" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601956915793">
