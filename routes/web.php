@@ -101,9 +101,21 @@ Route::middleware('auth')->group(function () {
     Route::post('/exercises/info/{id}', 'ExercisesController@submit')
         ->name('exercises/submit');
     //Display submissions
-    Route::get('exercises/submissions/{id}', 'ExercisesController@submissions')
+    Route::get('/exercises/submissions/{id}', 'ExercisesController@submissions')
         ->name('exercises/submissions');
 
+//Challenge page
+    //Display challenge list
+    Route::get('/challenges', 'ChallengesController@show')->name('challenges');
+    //Add new challenge
+    Route::get('/challenges/newChallenge', function(){
+        return view('challenges.newChallenge',['message'=>'']);
+    })->name('challenges/newChallenge');
+    Route::post('/challenges/newChallenge', 'ChallengesController@add')
+        ->name('challenges/newChallenge');
+    //Submit answer
+    Route::post('/challenges/{id}', 'ChallengesController@submit')
+        ->name('challenges/submit');
 
     //Log out
     Route::get('/logout', 'LoginController@logout')->name('logout');

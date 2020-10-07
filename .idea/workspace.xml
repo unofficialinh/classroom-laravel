@@ -10,13 +10,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55daa70f-7806-4dc2-9bdd-457f827c081e" name="Default Changelist" comment="new exercise">
-      <change afterPath="$PROJECT_DIR$/app/Models/Submission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/exercises/submissions.blade.php" afterDir="false" />
+    <list default="true" id="55daa70f-7806-4dc2-9bdd-457f827c081e" name="Default Changelist" comment="exercise page completely">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ChallengesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Challenge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/challenges/challenges.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/challenges/newChallenge.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/challenges/result.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExercisesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExercisesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/exercises/exercises.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exercises/exercises.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/exercises/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exercises/info.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/exercises/submission.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +225,7 @@
       <workItem from="1601903586996" duration="8342000" />
       <workItem from="1601950590775" duration="9649000" />
       <workItem from="1601990065484" duration="6934000" />
-      <workItem from="1602053111606" duration="7349000" />
+      <workItem from="1602053111606" duration="14251000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1601903744609</created>
@@ -259,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601998864556</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="exercise page completely">
+      <created>1602060815677</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602060815677</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,13 +294,14 @@
     <MESSAGE value="edit and delete message" />
     <MESSAGE value="members page completely" />
     <MESSAGE value="new exercise" />
-    <option name="LAST_COMMIT_MESSAGE" value="new exercise" />
+    <MESSAGE value="exercise page completely" />
+    <option name="LAST_COMMIT_MESSAGE" value="exercise page completely" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601956915793">
+    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602065279450">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601956915793" />
+    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1602065279450" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1601696586892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -299,18 +310,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="407" y="63" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1601909753997" />
-    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1601958287052">
+    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1602062116489">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1601958287052" />
+    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1602062116489" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1601536744973">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1601536744973" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1601903755762">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1602061027286">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601903755762" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1602061027286" />
     <state x="0" y="0" width="589" height="680" key="find.popup" timestamp="1601863976597">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

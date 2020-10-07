@@ -24,9 +24,6 @@
                             <label class="control-label col-sm-2" for="file">Submit:</label>
                             <div class="col-sm-8">
                                 <input type="file" class="form-control" name="file" id="file" required>
-                                <small id="helpBlock" class="form-text text-muted">
-
-                                </small>
                             </div>
                             <div class="col-sm-offset-10">
                                 <button type="submit" name="submit" class="btn btn-default">Submit</button>

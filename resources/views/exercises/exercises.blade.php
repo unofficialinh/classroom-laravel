@@ -6,7 +6,7 @@
 
 @section('content')
     @if(Auth::user()->role == 'teacher')
-        <a href="{{ route('newExercise') }}">+ Add new exercise</a><br><br>
+        <a href="{{ route('exercises/newExercise') }}">+ Add new exercise</a><br><br>
     @endif
     @foreach($exercises as $exercise)
         <div class="panel-group col-sm-offset-1 col-sm-10">
