@@ -10,21 +10,26 @@
         <form class="form-horizontal" action="{{ route('addNewStudent') }}" method="POST">
             @csrf
             <div class="form-group">
-                <label class="control-label col-sm-2" for="new_username">Tên đăng nhập:</label>
+                <label class="control-label col-sm-2" for="new_username">Username:</label>
                 <div class="col-sm-8">
                     <input type="text" class="form-control"
                            name="new_username" id="new_username" required>
+                    @error('new_username')
+                    <small id="helpBlock" style="color: #b32c2c" class="form-text text-muted">
+                        <i>{{ $message }}</i>
+                    </small>
+                    @enderror
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="new_name">Họ tên:</label>
+                <label class="control-label col-sm-2" for="new_name">Name:</label>
                 <div class="col-sm-8">
                     <input type="text" class="form-control"
                            name="new_name" id="new_name" required>
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="new_password">Mật khẩu:</label>
+                <label class="control-label col-sm-2" for="new_password">Password:</label>
                 <div class="col-sm-8">
                     <input type="password" class="form-control"
                            name="new_password" id="new_password" required>
@@ -38,7 +43,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="new_phone">Số điện thoại:</label>
+                <label class="control-label col-sm-2" for="new_phone">Phone:</label>
                 <div class="col-sm-8">
                     <input type="tel" class="form-control"
                            name="new_phone" id="new_phone">

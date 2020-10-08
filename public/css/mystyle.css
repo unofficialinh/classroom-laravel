@@ -2,6 +2,10 @@ body {
     margin-top: 50px;
     font-family: Loew, sans-serif;
     font-size: 18px;
+    background-image: url("../images/background-02.png");
+    background-position: left top;
+    background-size: 105%;
+    background-attachment: fixed;
 }
 
 .jumbotron{

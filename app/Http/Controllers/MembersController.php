@@ -20,6 +20,10 @@ class MembersController extends Controller
     public function addNewStudent(Request $request)
     {
         if ($request->has('save')) {
+            $validateUsername = $request->validate([
+               'new_username' =>  ['string','unique:users,username']
+            ]);
+
             $student = new User();
             $student->username = $request['new_username'];
             $student->name = $request['new_name'];
@@ -27,7 +31,8 @@ class MembersController extends Controller
             $student->email = $request['new_email'];
             $student->phone = $request['new_phone'];
             $student->save();
-            return redirect()->route('members/profile',['id'=>$student->id]);
+            return redirect()->route('members/profile', ['id' => $student->id]);
+
         }
     }
 
@@ -40,12 +45,14 @@ class MembersController extends Controller
             $user->phone = $request['new_phone'];
             $user->save();
             return redirect()->route('profile');
-//            return view('members.profile',['id'=>$user->id]);
         }
     }
 
     public function editStudentProfile(Request $request, $id){
         if ($request->has('save')){
+            $validateUsername = $request->validate([
+                'new_username' =>  ['string','unique:users,username']
+            ]);
             $user = User::find($id);
             $user->username = $request['new_username'];
             $user->name = $request['new_name'];
@@ -55,7 +62,6 @@ class MembersController extends Controller
             $user->phone = $request['new_phone'];
             $user->save();
             return redirect()->route('members/profile',['id'=>$user->id]);
-//            return view('members.profile',['id'=>$user->id]);
         }
     }
 

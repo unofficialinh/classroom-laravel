@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-})->name('welcome');
-
 //Log in
 Route::get('/login', 'LoginController@show')->name('login')->middleware('guest');
 Route::post('/login', 'LoginController@authenticate');
@@ -36,7 +32,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/members/addNewStudent',function (){
         return view('members.addNewStudent');
     });
-    Route::post('/members/addNewStudent','MembersController@addNewStudent')->name('addNewStudent');
+    Route::post('/members/addNewStudent','MembersController@addNewStudent')
+        ->name('addNewStudent');
     //Other member's profile
     Route::get('/members/{id}',function ($id){
         return view('members.profile',['id'=>$id]);

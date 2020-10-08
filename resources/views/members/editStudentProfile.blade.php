@@ -15,6 +15,11 @@
                 <div class="col-sm-9">
                     <input type="text" class="form-control" name="new_username"
                            id="new_username" value="{{ $student->username }}" required>
+                    @error('new_username')
+                    <small id="helpBlock" style="color: #b32c2c" class="form-text text-muted">
+                        <i>{{ $message }}</i>
+                    </small>
+                    @enderror
                 </div>
             </div>
             <div class="form-group">
