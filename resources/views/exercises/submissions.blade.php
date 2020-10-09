@@ -6,7 +6,7 @@
 
 @section('content')
     @if (Auth::user()->role == 'teacher')
-        @if ($submissions ==  null)
+        @if ($submissions->isEmpty())
             <div style='text-align: center'>There are no submissions!<br></div>
         @else
             @foreach ($submissions as $submission)
