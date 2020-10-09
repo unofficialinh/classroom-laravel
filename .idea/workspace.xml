@@ -10,10 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55daa70f-7806-4dc2-9bdd-457f827c081e" name="Default Changelist" comment="validate username duplicate">
+    <list default="true" id="55daa70f-7806-4dc2-9bdd-457f827c081e" name="Default Changelist" comment="message display, no submission notification">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/exercises/submissions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exercises/submissions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/messages/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/messages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/two-factor-authentication-form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-password-form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +225,7 @@
       <workItem from="1601990065484" duration="6934000" />
       <workItem from="1602053111606" duration="16010000" />
       <workItem from="1602123626953" duration="9860000" />
-      <workItem from="1602209393974" duration="1425000" />
+      <workItem from="1602209393974" duration="4024000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1601903744609</created>
@@ -278,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602133553080</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="message display, no submission notification">
+      <created>1602210876370</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602210876370</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +318,9 @@
     <MESSAGE value="exercise page completely" />
     <MESSAGE value="challenge page" />
     <MESSAGE value="validate username duplicate" />
-    <option name="LAST_COMMIT_MESSAGE" value="validate username duplicate" />
+    <MESSAGE value="message display" />
+    <MESSAGE value="message display, no submission notification" />
+    <option name="LAST_COMMIT_MESSAGE" value="message display, no submission notification" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602065279450">
@@ -329,10 +343,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1601536744973" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1602209500506">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1602210984009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1602209500506" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1602210984009" />
     <state x="0" y="0" width="589" height="680" key="find.popup" timestamp="1601863976597">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
