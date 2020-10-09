@@ -50,9 +50,11 @@ class MembersController extends Controller
 
     public function editStudentProfile(Request $request, $id){
         if ($request->has('save')){
-            $validateUsername = $request->validate([
-                'new_username' =>  ['string','unique:users,username']
-            ]);
+            $user = User::find($id);
+            if ($request['new_username'] != $user->username)
+                $request->validate([
+                    'new_username' =>  ['string','unique:users,username']
+                ]);
             $user = User::find($id);
             $user->username = $request['new_username'];
             $user->name = $request['new_name'];
