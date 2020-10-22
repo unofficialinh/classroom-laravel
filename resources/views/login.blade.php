@@ -72,6 +72,12 @@
                 </div>
             </div>
         </form>
+        <div style="text-align: center">OR</div>
+        <div class="form-group">
+            <div style="text-align: center">
+                <a href="{{url('/redirect')}}" class="btn btn-primary">Login with Facebook</a>
+            </div>
+        </div>
     </div>
 </div>
 </body>

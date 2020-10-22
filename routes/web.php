@@ -18,6 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', 'LoginController@show')->name('login')->middleware('guest');
 Route::post('/login', 'LoginController@authenticate');
 
+//Log in with Facebook
+Route::get('/redirect', 'SocialAuthController@redirect');
+Route::get('/callback', 'SocialAuthController@callback');
+
 // Protected Routes - allows only logged in users
 Route::middleware('auth')->group(function () {
 //Home page

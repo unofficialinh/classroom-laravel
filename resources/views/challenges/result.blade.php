@@ -14,7 +14,7 @@
         <div style="text-align: center">
             <p><b><i>Correct answer!</i></b></p>
             <div class="jumbotron" style="text-align: left">
-                {{ Storage::get($result) }}
+                {{ File::get($result) }}
             </div>
             <button class="btn btn-default"><a href="{{ route('challenges') }}">Back</a></button>
         </div>

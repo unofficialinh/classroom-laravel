@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Challenge;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 
 class ChallengesController extends Controller
@@ -41,8 +42,8 @@ class ChallengesController extends Controller
     public function submit(Request $request, $id){
         if ($request->has('submit')){
             $answer = $request['answer'];
-            $filepath = 'challenges/'.$id.'_'.$answer.'.txt';
-            if (Storage::exists($filepath)){
+            $filepath = 'storage/challenges/'.$id.'_'.$answer.'.txt';
+            if (File::exists($filepath)){
                 return view('challenges.result',['result'=>$filepath]);
             }
             else
