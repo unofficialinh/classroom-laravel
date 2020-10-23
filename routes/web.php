@@ -22,12 +22,24 @@ Route::post('/login', 'LoginController@authenticate');
 Route::get('/redirect', 'SocialAuthController@redirect');
 Route::get('/callback', 'SocialAuthController@callback');
 
+//Verify 2fa
+Route::group(["middleware" => ["auth"], "prefix" => "2fa"], function() {
+    Route::get("/authCode", "VerifyTwoFactorController@show")->name("authCode");
+    Route::post("/verify", "VerifyTwoFactorController@verify")->name("verify");
+});
+
 // Protected Routes - allows only logged in users
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth','2fa'])->group(function () {
 //Home page
     Route::get('/', function () {
         return view('index');
     })->name('index');
+
+//2fa
+    Route::group(["prefix" => "2fa"], function() {
+        Route::get("/setting", "TwoFactorAuthsController@show")->name("2faSetting");
+        Route::post("/enable", "TwoFactorAuthsController@enable")->name("2faEnable");
+    });
 
 //Members pages
     //Member list

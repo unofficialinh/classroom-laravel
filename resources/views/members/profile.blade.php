@@ -24,6 +24,11 @@
                         Edit your profile
                     </a>
                 </button>
+                <button class="btn btn-default">
+                    <a href="{{ route('2faSetting') }}">
+                        Two factor authentication
+                    </a>
+                </button>
             @else
                 <button class="btn btn-default">
                     <a href="{{ route('members/messages', ['id'=>$member->id]) }}">
